@@ -54,8 +54,8 @@ public class upcoming extends RecyclerView.Adapter<upcoming.MyViewHolder> {
         Glide.with(context).load(image)
                 .crossFade()
                 .centerCrop()
-                .placeholder(R.mipmap.ic_launcher_round)
-                .error(R.mipmap.ic_launcher)
+                .placeholder(R.mipmap.movie)
+                .error(R.mipmap.movie)
                 .into(holder.imageView);
     }
 
