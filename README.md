@@ -17,9 +17,9 @@
   - fitur reminder
   
 ## Screenshoot  
-  ![hasil](https://postimg.org/image/ezcfh4w5h/][img]https://s18.postimg.org/ezcfh4w5h/image.png)
-  ![hasil](https://postimg.org/image/x0vkexq6d/][img]https://s18.postimg.org/x0vkexq6d/image.png)
-  ![hasil](https://postimg.org/image/rbfbumk05/][img]https://s18.postimg.org/rbfbumk05/image.png)
+  ![hasil](https://s18.postimg.org/ezcfh4w5h/image.png)
+  ![hasil](https://s18.postimg.org/x0vkexq6d/image.png)
+  ![hasil](https://s18.postimg.org/rbfbumk05/image.png)
   
 ## LINK APLIAKASI
   https://github.com/agungwrdn/tugaspribadi/blob/master/app-release.apk
