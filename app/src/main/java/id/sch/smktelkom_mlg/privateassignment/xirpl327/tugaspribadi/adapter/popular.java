@@ -24,6 +24,7 @@ public class popular extends RecyclerView.Adapter<popular.MyViewHolder> {
     public String url = "https://image.tmdb.org/t/p/w500";
     public String image;
     ArrayList<Results> mlist;
+
     PopularFragment popularFragment;
     Context context;
     private int lastposition = -1;
@@ -54,8 +55,8 @@ public class popular extends RecyclerView.Adapter<popular.MyViewHolder> {
         Glide.with(context).load(image)
                 .crossFade()
                 .centerCrop()
-                .placeholder(R.mipmap.ic_launcher_round)
-                .error(R.mipmap.ic_launcher)
+                .placeholder(R.mipmap.movie)
+                .error(R.mipmap.movie)
                 .into(holder.imageView);
     }
 

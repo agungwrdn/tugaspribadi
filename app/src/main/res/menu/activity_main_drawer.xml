@@ -16,8 +16,8 @@
             android:title="Upcoming" />
         <item
             android:id="@+id/nav_upcoming"
-            android:icon="@drawable/ic_star_black_24dp"
-            android:title="Favorite" />
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Reminder" />
     </group>
 
 </menu>
