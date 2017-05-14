@@ -4,7 +4,6 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
-import id.sch.smktelkom_mlg.privateassignment.xirpl327.tugaspribadi.fragment.FavoriteFragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl327.tugaspribadi.fragment.HomeFragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl327.tugaspribadi.fragment.PopularFragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl327.tugaspribadi.fragment.UpcomingFragment;
@@ -15,7 +14,6 @@ public class VolleySingleton {
     private static HomeFragment mCtx;
     private static PopularFragment mCtx2;
     private static UpcomingFragment mCtx3;
-    private static FavoriteFragment mCtx4;
 
     private RequestQueue mRequestQueue;
     
@@ -57,17 +55,6 @@ public class VolleySingleton {
         mRequestQueue = getRequestQueue();
     }
 
-    private VolleySingleton(FavoriteFragment context3) {
-        if (mInstance != null) {
-            throw new RuntimeException(
-                    "Use getInstance() method to get the single instance of this class");
-        }
-        mCtx4 = context3;
-        mRequestQueue = getRequestQueue();
-    }
-
-
-
     public static VolleySingleton getInstance(HomeFragment context) {
         if (mInstance == null) {
             synchronized (VolleySingleton.class) {
@@ -95,14 +82,6 @@ public class VolleySingleton {
         return mInstance;
     }
 
-    public static VolleySingleton getInstance(FavoriteFragment context3) {
-        if (mInstance == null) {
-            synchronized (VolleySingleton.class) {
-                if (mInstance == null) mInstance = new VolleySingleton(context3);
-            }
-        }
-        return mInstance;
-    }
 
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
