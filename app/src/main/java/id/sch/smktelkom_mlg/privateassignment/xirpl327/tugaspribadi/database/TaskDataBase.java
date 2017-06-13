@@ -31,13 +31,11 @@ public class TaskDataBase extends SQLiteOpenHelper implements MyDataBase {
                 + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_TASK + " TEXT,"
                 + KEY_DATE + " TEXT," + KEY_TIME + " TEXT," + KEY_STATUS + " TEXT" + ")";
         db.execSQL(CREATE_TASKS_TABLE);
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_TASKS);
-
         onCreate(db);
     }
 

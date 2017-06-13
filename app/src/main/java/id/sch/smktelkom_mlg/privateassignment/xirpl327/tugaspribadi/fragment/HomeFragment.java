@@ -32,6 +32,7 @@ public class HomeFragment extends Fragment {
     ArrayList<Results> mlist = new ArrayList<>();
     home myAdapter;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
